@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LALIMA VERMA</title>
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="name">&lt;LALIMA VERMA/&gt;</div>
+        <div class="nav-links">
+            <a class="active" href="index.html">&lt;Home/&gt;</a>
+            <a class="active" href="work.html">&lt;Work/&gt;</a>
+            <a class="active" href="About.html">&lt;About/&gt;</a>
+            <a class="active" href="contact.html">&lt;Contact/&gt;</a>
+            <a class="active" href="resume.pdf">&lt;Resume/&gt;</a>
+        </div>
+    </div>
+    <div class="info">
+        <h6>Start/&gt;</h6>
+        <p>Hi, My name is <span style="color: #c99dff; font-size: 50px; ">LALIMA VERMA</span></p>
+        <p>I like to <span style="font-family: 'Dancing Script', cursive; ">design</span></p>
+        <p>and learn about <span style="font-family: 'Dancing Script', cursive;">Cybersecurity</span></p>
+        <p><span style="font-size:20px">Let me show you...</span></p>
+    </div>
+    <div class="datetime">
+        <p id="datetime"></p>
+
+        <script>
+            // Function to update and display the current date and time
+            function updateDateTime() {
+                const dateTimeElement = document.getElementById('datetime');
+                const now = new Date();
+                const dateTimeString = now.toLocaleString(); // Format the date and time as a string
+                dateTimeElement.textContent = dateTimeString;
+            }
+
+            // Call the function initially and set it to update every second (1000 milliseconds)
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+        </script>
+    </div>
+    
+    
+</body>
+
+</html>

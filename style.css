@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Dancing+Script:wght@500&family=Noto+Serif:ital,wght@1,300&family=Roboto+Condensed&display=swap');
+body{
+    background-image: url('/images/Home1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 100px; 
+    display: flex;
+    justify-content:center;
+  }
+  
+  .navbar a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    margin: 0 2px; 
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .navbar a.active {
+    font-weight: bold; 
+  }
+
+  .navbar a:hover {
+    background-color: #c7a9ff;
+    color: black;
+  }
+
+  .name{
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 100px;
+    margin-left: -50px;
+
+  }
+
+  .info{
+    padding-left: 350px;
+    font-size: 40px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    animation: fade-down 1000ms forwards;
+    transform: translateY(-100px);
+    opacity: 0;
+
+  }
+
+  @keyframes fade-down {
+
+    30% {
+          opacity: 0;
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  .info span{
+    font-weight: bold;
+  }
+
+  .info p{
+    margin-bottom: -44px;
+  }
+
+.datetime{
+    padding-left: 771px;
+    padding-top: 63px;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+
+}
